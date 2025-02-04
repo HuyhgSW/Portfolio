@@ -1,12 +1,17 @@
+﻿using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Text.Json;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://*:{port}");
 
-builder.Services.AddHealthChecks();
-
-// Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddHealthChecks()
+    .AddCheck("self", () => HealthCheckResult.Healthy());
 
 var app = builder.Build();
 
@@ -18,7 +23,20 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHealthChecks("/health");
+app.UseHealthChecks("/health", new HealthCheckOptions
+{
+    ResponseWriter = async (context, report) =>
+    {
+        var result = JsonSerializer.Serialize(new
+        {
+            status = report.Status.ToString(),
+            checks = report.Entries.Select(e => new { key = e.Key, value = e.Value.Status.ToString() })
+        });
+
+        context.Response.ContentType = "application/json";
+        await context.Response.WriteAsync(result);
+    }
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
