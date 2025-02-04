@@ -1,0 +1,175 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GHuy";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+
+<section>
+    <h2>1. Giới thiệu bản thân</h2>
+    <p><strong>Họ và tên:</strong> Hoàng Gia Huy</p>
+    <p><strong>Email:</strong> huyhg.sw1822@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/HuyhgSW" target="_blank">https://github.com/HuyhgSW</a></p>
+</section>
+
+<section>
+    <h2>2. Các dự án tham gia</h2>
+    <ul>
+        <li>
+            <strong>Web bán các mặt hàng đồ công nghệ</strong> (01/2023 - 03/2023)
+            <p>Nhóm: 3 người</p>
+            <p>Mô tả: Website bán hàng về các đồ công nghệ như tai nghe, laptop, màn hình, v.v....</p>
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/img/tai-nghe.webp" alt="Tai Nghe" width="150" height="150">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/man-hinh.webp" alt="Màn Hình" width="150" height="150">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/laptop.webp" alt="Laptop" width="150" height="150">
+                </div>
+            </div>
+            <p>Công nghệ: Java Servlet (GET, POST), JST</p>
+            <img src="~/img/java-logo.webp" alt="Java Logo" width="150" height="150">
+        </li>
+        <li>
+            <strong>Web quản lý câu lạc bộ sinh viên (Student Club Management System)</strong> (05/2023 - 07/2023)
+            <p>Nhóm: 5 người (2 người làm (1 admin, 1 user), 3 người ngồi chơi)</p>
+            <p>Mô tả: Web quản lý câu lạc bộ sinh viên giúp mọi người tìm kiếm những người bạn cùng chung sở thích và đam mê</p>
+            <p>Công nghệ: Java Servlet (GET, POST), JST, JavaScript (AJAX), Ngrok, Radmin VPN</p>
+            <div class="row">
+                <div class="col-1" style="margin-right:3%;">
+                    <img src="~/img/javascript-logo.png" alt="JavaScript Logo" width="50" height="50">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/ngrok-logo.png" alt="Ngrok Logo" width="50" height="50">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/radmin-vpn-logo.webp" alt="Radmin VPN Logo" width="100" height="50">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web quản lý sở thú (Zoo Management System)</strong> (09/2023 - 11/2023)
+            <p>Nhóm: 5 người</p>
+            <p>Mô tả: Web quản lý sở thú</p>
+            <img src="~/img/zoo-logo-black.png" alt="Zoo Logo" width="200" height="100">
+            <p>Công nghệ: C# MVC .NET Framework, JavaScript (AJAX), Stripe Payments, LINQ</p>
+            <div class="row">
+                <div class="col-1" style="margin-right:10%;">
+                    <img src="~/img/csharp-logo.png" alt="C# Logo" width="150" height="80">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/stripe-logo.png" alt="Stripe Logo" width="150" height="80">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web bán các mặt hàng rau củ hữu cơ (PRN221_MockProject)</strong> (01/2024 - 03/2024)
+            <p>Nhóm: 2 người (1 người làm hết còn lại ngồi chơi)</p>
+            <p>Mô tả: Web bán các mặt hàng rau củ hữu cơ</p>
+            <p>Công nghệ: C# Razor Pages .NET Framework, JavaScript (AJAX), Stripe-VNPay-MoMo-PayPal Payments, SignalR (C#), Google-Facebook Authentication, LINQ</p>
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/img/razor-pages-logo.jpg" alt="Razor Pages Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/vnpay-logo.jpg" alt="VNPay Logo" width="150" height="80">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/momo-logo.webp" alt="MoMo Logo" width="150" height="80">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web bán các mặt hàng tái chế (EcoWare Friendly)</strong> (05/2024 - 07/2024)
+            <p>Link Website: <a href="https://ecowarefriendly.store/" target="_blank">https://ecowarefriendly.store/</a> (Server đã ngừng)</p>
+            <p>Nhóm: 3 người (2 admin, 1 user)</p>
+            <p>Mô tả: Web bán các mặt hàng tái chế như ống hút tre, giấy, hộp bã mía</p>
+            <img src="~/img/eco-logo.png" alt="Eco Logo" width="150" height="150">
+            <p>Công nghệ: C# Razor Pages .NET Framework, JavaScript (AJAX), PayOS Payments, Google Authentication, LINQ, iNET Hosting</p>
+            <div class="row">
+                <div class="col-1">
+                    <img src="~/img/google-logo.jpg" alt="Google Logo" width="50" height="50">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/inet-logo.webp" alt="iNET Logo" width="50" height="50">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web bán đồ chơi cho trẻ nhỏ (PRN231_MockProject)</strong> (05/2024 - 07/2024)
+            <p>Nhóm: 2 người (1 người làm hết còn lại ngồi chơi)</p>
+            <p>Mô tả: Web bán đồ chơi trẻ nhỏ</p>
+            <p>Công nghệ: C# Web API (OData), .NET Framework, JavaScript (AJAX), PayPal Payments, Google Authentication, LINQ, JWT & CORS</p>
+            <div class="row">
+                <div class="col-1" style="margin-right:3%;">
+                    <img src="~/img/api-logo.png" alt="API Logo" width="100" height="100">
+                </div>
+                <div class="col-1">
+                    <img src="~/img/paypal-logo.png" alt="PayPal Logo" width="100" height="100">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web tìm việc làm cho học sinh sinh viên (Work Connection System For Students)</strong> (09/2024 - 12/2024)
+            <p>Link Website: <a href="https://findjob-ruby.vercel.app/" target="_blank">https://findjob-ruby.vercel.app/</a> (API đã ngừng)</p>
+            <p>Nhóm: 5 người</p>
+            <p>Mô tả: Web tìm việc làm cho học sinh, sinh viên</p>
+            <img src="~/img/findjob-logo.png" alt="Find Jobs Logo" width="150" height="100">
+            <p>Công nghệ: React TS (Redux Toolkit, Ant Design, Axios, Tailwind CSS), C# Web API .NET Framework, PayOS Payments, LINQ, SignalR, Google Authentication, Google Cloud Storage, Cloudflare Turnstile, ZEGOCLOUD, ID Recognition (FPT AI), Background Services (C#), Chatbot AI (Gemini API)</p>
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/img/react-ts-logo.png" alt="React TS Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/gg-cloud-logo.png" alt="Google Cloud Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/cloudflare-logo.webp" alt="Cloudflare Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/zegocloud-logo.png" alt="ZEGOCLOUD Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/gemini-logo.jpg" alt="Gemini Logo" width="150" height="80">
+                </div>
+                <div class="col-2">
+                    <img src="~/img/fpt-ai-logo.png" alt="FPT AI Logo" width="150" height="80">
+                </div>
+            </div>
+        </li>
+        <li>
+            <strong>Web tour du lịch + bán vé chuẩn SEO (TourTicket)</strong> (01/2025 - Dự kiến 03/2025)
+            <p>Nhóm: 2 người</p>
+            <p>Mô tả: Web tour du lịch và bán vé</p>
+            <p>Công nghệ: C# MVC .NET Framework, JavaScript (AJAX), PayOS Payments, LINQ</p>
+            <img src="~/img/payos-logo.svg" alt="PayOS Logo" width="150" height="80">
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Kỹ năng</h2>
+    <ul>
+        <li>Ngôn ngữ lập trình: Java, C#</li>
+        <li>Framework / Công cụ: .NET Framework, Java Servlet, React TS, Redux Toolkit, LINQ, SignalR</li>
+        <li>Thanh toán: Stripe, VNPay, MoMo, PayPal, PayOS</li>
+        <li>Bảo mật: JWT, CORS</li>
+        <li>Deploy: AWS EC2, Vercel, iNET Hosting</li>
+        <li>Kỹ năng khác: Chatbot AI (Gemini API), Google Cloud Storage</li>
+    </ul>
+    <div class="row">
+        <div class="col-2">
+            <img src="~/img/aws-logo-svg.jpg" alt="AWS Logo" width="150" height="150">
+        </div>
+        <div class="col-2">
+            <img src="~/img/vercel-logo.jpg" alt="Vercel Logo" width="150" height="150">
+        </div>
+    </div>
+</section>
