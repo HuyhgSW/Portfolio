@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portfolio", "Portfolio\Port
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{960817EC-8D5A-4CD7-92F3-6E0521F429AC}"
 	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
 		railway.toml = railway.toml
 	EndProjectSection
 EndProject
